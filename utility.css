@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 body {
@@ -26,8 +34,14 @@ a {
 	overflow: hidden;
 }
 .flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 .primary_back {
@@ -50,12 +64,16 @@ a {
 }
 
 .grid_2 {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 1.5rem 1fr;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1.5rem;
 }
 .grid_3 {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1.5rem;
 }
@@ -65,14 +83,18 @@ img {
 }
 
 .card {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	border-radius: 0.3rem;
 	background-color: #fff;
 	font-size: 1.3rem;
 	padding: 0.5rem;
+	-webkit-box-shadow: 0.2rem 0.2rem 0.4rem #c2b6b6;
 	box-shadow: 0.2rem 0.2rem 0.4rem #c2b6b6;
-
 }
 
 .py_1 {
@@ -132,6 +154,8 @@ img {
 }
 .btn:hover,
 .btn_2:hover {
+	-webkit-transform: scale(0.95);
+	-ms-transform: scale(0.95);
 	transform: scale(0.95);
 }
 
